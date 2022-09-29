@@ -1,4 +1,4 @@
-const tax = 12;
+/* const tax = 12;
 let UserName="Miguel Antonio"
 let agee = 23;
 let email = "miguel.bastidas18@tectijuana.edu.mx"
@@ -37,3 +37,5 @@ let newGPA = .3 + Number(gpa);
 document.write("<p> Name: " + studentName + "</p>"); //concatenation
 document.write("<p> Age: " + studentAge + "</p>");
 document.write("<p> GPA: " + newGPA + "</p>");
+ */
+
