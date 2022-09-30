@@ -1,26 +1,39 @@
-/* //----------------------------------------------------------------------------------//
-//----------------------------------------------------------------------------------//
-let studentName = prompt("Enter student name");; //string, "",'',``
-let studentAge = prompt("Enter student age");; //number 1,0000000, 1.3, any number
-let gpa = prompt("Enter GPA");; //boolean
-
-let newGPA = .3 + Number(gpa);
-document.write("<p> Name: " + studentName + "</p>"); //concatenation
-document.write("<p> Age: " + studentAge + "</p>");
-document.write("<p> GPA: " + newGPA + "</p>");
- */ 
 
 let tax = .08;
+let user1="admin";
+let pass1="password";
+let price =2350;
+let cart = 0;
+let total = 0;
+let quantity = 0;
+let product;
 
-let product = prompt("Enter your product");
-let cantidad = prompt("Enter amount");
-let price = prompt("Enter the price");
+let userName=prompt('Enter your username: "admin"')
+let password=prompt('Enter your username: "password"')
+console.log(userName,password)
 
-let subtotal = (Number(price) * Number(cantidad))
-let whitax= subtotal + (subtotal * tax);
+if(userName==user1 && password==pass1){
+    document.write("<p class='p-text'> Thanks for you're recent purchase </p> " +userName)
+}else{
+    document.write("create an account")
+}
 
-document.write("<p class='p-text'> El producto seleccionado es: " + product +"</p>");
-document.write("<p class='p-text'> Cantidad de producto: " + cantidad +"</p>");
-document.write("<p class='p-text'> El precio unitario es: " + price +"</p>");
-document.write("<p class='p-text'> El subtotal es: " + subtotal +"</p>");
-document.write("<p class='p-text'> El total con impuestos es: " + whitax +"</p>");
+function Checkout(){
+    product = prompt("Enter your product");
+    quantity = prompt("Enter amount");
+    cart = price * quantity
+    total= cart + (cart * tax);
+    console.log(product,quantity,cart,total)
+}
+function displayInfo(){
+    document.write(`
+    <p class='p-text'> product:  ${product} </p>
+    <p class='p-text'> Quantity:  ${quantity} </p>
+    <p class='p-text'> Cart:  ${cart} </p>
+    <p class='p-text'> Tax:  ${tax} </p>
+    <p class='p-text'> Tota:  ${total} </p>
+    `)
+}
+Checkout()
+displayInfo()
+
