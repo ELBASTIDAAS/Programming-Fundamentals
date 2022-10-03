@@ -1,0 +1,71 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+  /* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+  /* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+  /* Style the header */
+.header {
+    background-color: black;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+  /* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: grey;
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
